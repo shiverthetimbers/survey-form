@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id='title'>Membership Survey</h1>
+    <p id='description'>Thank you for continuing or considering a membership with us. Please complete the form below.</p>
+    <form id='survey-form'>
+      <fieldset>
+        <legend>Membership Status</legend>
+        <label for='existing' class='mem-stat1'><input value='existing' id ='existing' type='radio' name='membership-status' />Existing Member</label>
+        <label for='new' class='mem-stat2'><input value='new' id ='new' type='radio' name='membership-status' />New Member</label>
+      </fieldset>
+      <label class='middle' id='name-label' for='name'>Name: <input placeholder='First and Last Name' id='name' type='text' required /></label>
+      <label class='middle' id='email-label' for='email'>Email: <input placeholder='example@domain.com' id='email' type='email' required/></label>
+      <label class='middle' id='number-label' for='number'>Travel time (minutes): <input value='travel' placeholder='2-360 minutes' id='number' type='number' min='2' max='360' /></label>
+      <label class='middle' for='dropdown'>Term:
+        <select class='dropdown' id='dropdown'>
+          <option>(choose one)</option>
+          <option>Lifetime Membership</option>
+          <option>Annual Membership</option>
+          <option>Monthly Membership</option>
+        </select>
+      <fieldset>
+        <legend>Event Interests: </legend>
+        <label for='potluck'><input value='potluck' type='checkbox' id='potluck' />Potluck Dinner and Auction</label>
+        <label for='uspsa'><input value='uspsa' type='checkbox' id='uspsa' />USPSA Match</label>
+        <label for='idpa'><input value='idpa' type='checkbox' id='idpa' />IDPA Match</label>
+        <label for='long-range'><input value='long-range' type='checkbox' id='long-range' />Long Range Rifle Match</label>
+        <label for='instructor'><input value='instructor' type='checkbox' id='instructor' />Instructor-led Training</label>
+        <label for='other-event'><textarea placeholder='List any other events you would like to see hosted at the club.' id='other-event' rows='5' cols='50'></textarea></label>
+      </fieldset>
+      <input type='submit' value='Submit' id='submit' />
+    </form>
+  </body>
+</html>

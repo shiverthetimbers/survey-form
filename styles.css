@@ -1,0 +1,59 @@
+
+body {
+  font-family: Tahoma;
+  font-size: 18px;
+  background: #001D2B;
+  color: beige;
+}
+
+h1,p {
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  min-width: 300px;
+  margin: auto;
+  padding-bottom: 2em;
+}
+
+.mem-stat1 {
+  text-align: left;
+  display: inline;
+}
+
+.mem-stat2 {
+  text-align: right;
+  display: inline;
+}
+
+label {
+  display: block;
+}
+
+.middle {
+  margin: .5rem 0;
+}
+
+
+input, textarea, select{
+  background-color: #005377;
+  color: white;
+}
+
+
+textarea {
+  margin-top: 20px;
+  width: 100%;
+}
+
+fieldset {
+  margin: 1rem 0;
+}
+
+input[type='submit'] {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  background-color: #0053D0
+}
